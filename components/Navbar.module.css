@@ -1,0 +1,193 @@
+/* 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.nav_logo_container img {
+  width: 100px;
+}
+
+.navbar_links_container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_links_container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navbar_cart_icon {
+  font-size: 1.15rem;
+}
+
+.primary_button {
+  padding: 0.9rem 1.75rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar_menu_container {
+  display: none;
+}
+
+.navbar_menu_container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar_links_container {
+    display: none;
+  }
+  .navbar_menu_container {
+    display: block;
+  }
+} */
+/* Navbar.module.css */
+/* Navbar.module.css */
+/* Navbar.module.css */
+/* Navbar.module.css */
+/* Navbar.module.css */
+.nav {
+  background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+  padding: 0 20px;
+  position: fixed; /* Fixed at the top of the page */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0; /* Add some padding for better spacing */
+}
+
+.nav_logo_container img {
+  height: 40px; /* Adjust height as needed */
+  width: auto;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav_menu li {
+  display: inline;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav a:hover {
+  background-color: #575757;
+  border-radius: 4px; /* Rounded corners on hover */
+}
+
+.nav a svg {
+  margin-right: 8px; /* Add some space after the icons */
+}
+
+.active {
+  background-color: #04AA6D;
+  border-radius: 4px; /* Rounded corners for active state */
+}
+
+.nav_icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav_menu_open {
+    display: flex;
+  }
+
+  .nav_menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .nav a {
+    padding: 14px 16px;
+    width: 100%;
+  }
+
+  .nav_icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav a {
+    padding: 12px;
+  }
+}
+
+/* Add padding to main content to avoid overlap */
+.content {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-top: 100px; /* Adjust based on navbar height on smaller screens */
+  }
+}
